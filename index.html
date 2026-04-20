@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <div class="logo">Manjith</div>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+
+  <section id="hero" class="hero-section">
+
+    <div class="hero-container">
+
+      <!-- LEFT TEXT -->
+      <div class="hero-content">
+        <p class="hero-subtitle">Hello, I'm</p>
+        <h1 class="hero-title">Manjith Yadav</h1>
+        <p class="hero-role">Full Stack MERN Developer</p>
+
+        <div class="hero-buttons">
+          <a href="./assets/manjith_resume.pdf" target="_blank" class="btn-primary">
+            Download CV
+          </a>
+          <a href="#contact" class="btn-secondary">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/manjith-yadav-071b99276/" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/manjityadav" target="_blank">
+            <img src="./assets/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="hero-image">
+        <img src="./assets/profle-pic.jpeg" alt="Profile Image" />
+      </div>
+
+    </div>
+
+  </section>
+  <section id="about" class="about-section">
+    <p class="about-subtitle">Get To Know More</p>
+    <h1 class="about-title">About Me</h1>
+
+    <div class="about-wrapper">
+
+      <!-- LEFT SIDE (CARDS) -->
+      <div class="about-cards">
+
+        <div class="about-card">
+          <h3>Experience</h3>
+          <p>Fresher<br />MERN Stack Developer</p>
+        </div>
+
+        <div class="about-card">
+          <h3>Education</h3>
+          <p>B.Tech Final Year<br />Engineering Student</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE (TEXT) -->
+      <div class="about-text">
+        <p>
+          I'm a passionate Full Stack Developer specializing in the MERN stack.
+          I enjoy building modern, scalable web applications and solving real-world problems.
+          Currently focusing on improving my DSA and development skills to land a role in a startup.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section id="experience" class="experience-section">
+    <p class="exp-subtitle">Explore My</p>
+    <h1 class="exp-title">Skills</h1>
+
+    <div class="exp-grid">
+
+      <!-- FRONTEND -->
+      <div class="exp-card">
+        <h2>Frontend</h2>
+
+        <div class="exp-items">
+          <div class="exp-item">
+            <span>HTML</span>
+            <small>Experienced</small>
+          </div>
+
+          <div class="exp-item">
+            <span>CSS</span>
+            <small>Experienced</small>
+          </div>
+
+          <div class="exp-item">
+            <span>JavaScript</span>
+            <small>Intermediate</small>
+          </div>
+
+          <div class="exp-item">
+            <span>React</span>
+            <small>Intermediate</small>
+          </div>
+
+          <div class="exp-item">
+            <span>Redux Toolkit</span>
+            <small>Intermediate</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="exp-card">
+        <h2>Backend</h2>
+
+        <div class="exp-items">
+          <div class="exp-item">
+            <span>Node.js</span>
+            <small>Intermediate</small>
+          </div>
+
+          <div class="exp-item">
+            <span>Express.js</span>
+            <small>Intermediate</small>
+          </div>
+
+          <div class="exp-item">
+            <span>MongoDB</span>
+            <small>Intermediate</small>
+          </div>
+
+          <div class="exp-item">
+            <span>PostgreSQL</span>
+            <small>Basic</small>
+          </div>
+
+          <div class="exp-item">
+            <span>Git & GitHub</span>
+            <small>Intermediate</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="projects" class="projects-section">
+    <p class="projects-subtitle">Browse My Recent</p>
+    <h1 class="projects-title">Projects</h1>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <img src="./assets/linkforge.png" alt="Project 1" class="project-image" />
+
+        <div class="project-content">
+          <h3>LinkForge</h3>
+          <p>LinkForge is a full-stack networking platform designed to connect users and manage professional profiles.
+It features connection requests, profile management, and resume generation.</p>
+
+          <div class="project-buttons">
+            <a href="https://github.com/manjityadav/LinkForge" target="_blank">GitHub</a>
+            <a href="https://link-forge-mmhf4d5eh-manjeet-yadavs-projects.vercel.app/" target="_blank" class="live-btn">Live</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <img src="./assets/vidmeet.png" alt="Project 2" class="project-image" />
+
+        <div class="project-content">
+          <h3>VidMeet</h3>
+          <p>VidMeet is a full-stack video conferencing app using WebSocket.io for real-time signaling.
+It ensures fast, reliable, and low-latency communication between users.</p>
+
+          <div class="project-buttons">
+            <a href="https://github.com/manjityadav/VidMeet">GitHub</a>
+            <a href="https://vidmeet-frontend-7es6.onrender.com" class="live-btn">Live</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <img src="./assets/weapon.jpg" alt="Project 3" class="project-image" />
+
+        <div class="project-content">
+          <h3>Weapon Detection</h3>
+          <p>Weapon Detection is a deep learning-based system that identifies weapons in images and video streams.
+It uses OpenCV, NumPy, and trained models to perform real-time detection with high accuracy.</p>
+
+          <div class="project-buttons">
+            <!-- <a href="#">GitHub</a>
+            <a href="#" class="live-btn">Live</a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:manjeetyadav2905@gmail.com">manjeetyadav2905@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container2">
+        <ul class="nav-links2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; Manjith Yadav. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
